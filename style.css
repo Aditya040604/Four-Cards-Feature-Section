@@ -93,6 +93,7 @@ h1 > span {
 .layout-grid {
     --gap: 2rem;
     display: grid;
+    grid-template-columns: 1fr;
     grid-auto-columns: 1fr; /*using this grid property any column created will take up same space just like using flex 1 in col of flexbox */
     gap: var(--gap);
 
