@@ -93,7 +93,6 @@ h1 > span {
 .layout-grid {
     --gap: 2rem;
     display: grid;
-    grid-template-columns: 1fr;
     grid-auto-columns: 1fr; /*using this grid property any column created will take up same space just like using flex 1 in col of flexbox */
     gap: var(--gap);
 
@@ -111,6 +110,21 @@ h1 > span {
         ;
 
     }
+
+    .card:nth-child(1){
+    grid-area: one;
+
+}
+
+.card:nth-child(2){
+    grid-area: two;
+}
+.card:nth-child(3){
+    grid-area: three;
+}
+.card:nth-child(4){
+    grid-area: four;
+}
 }
 
 /* .layout-grid > *{
@@ -136,20 +150,7 @@ h1 > span {
     box-shadow: 0 1rem 1.5rem -.5rem rgb(0 50 100 / .15);
 } 
 
-.card:nth-child(1){
-    grid-area: one;
 
-}
-
-.card:nth-child(2){
-    grid-area: two;
-}
-.card:nth-child(3){
-    grid-area: three;
-}
-.card:nth-child(4){
-    grid-area: four;
-}
 
 
 .card__title{
